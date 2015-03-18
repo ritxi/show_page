@@ -1,3 +1,5 @@
+require 'launchy'
+
 module ShowPage
   def show_page
 
