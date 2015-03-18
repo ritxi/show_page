@@ -1,0 +1,12 @@
+# Gemfile
+
+gem 'show_page', git: git@gist.github.com:/e00719ed511a5ee26ce4.git
+
+# spec_helper.rb
+
+require 'show_page'
+
+# requests/my_spec.rb
+
+visit root_path
+show_page
