@@ -1,6 +1,6 @@
 # Gemfile
 
-gem 'show_page', git: git@gist.github.com:/e00719ed511a5ee26ce4.git
+gem 'show_page', github: 'ritxi/show_page'
 
 # spec_helper.rb
 
