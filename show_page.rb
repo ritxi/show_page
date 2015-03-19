@@ -4,7 +4,7 @@ module ShowPage
   def show_page
 
     save_page('capybara.html')
-    ::Launchy::Browser.run("http://localhost:3000/capybara.html")
+    ::Launchy.open("http://localhost:3000/capybara.html")
   end
 end
 
