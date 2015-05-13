@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.require_path  = '.'
 
   s.add_dependency('capybara')
-  s.add_dependency('launchy')
+  s.add_dependency('launchy', '>= 2.4')
 end
