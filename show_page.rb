@@ -2,8 +2,7 @@ require 'launchy'
 
 module ShowPage
   def show_page
-
-    save_page('capybara.html')
+    save_page(::Rails.root.join('public', 'capybara.html'))
     ::Launchy.open("http://localhost:3000/capybara.html")
   end
 end
