@@ -9,6 +9,9 @@ module ShowPage
 end
 
 RSpec.configure do |config|
-  Capybara.save_and_open_page_path = Rails.root.join('public')
+  config.before(:suite, type: :request) do
+    Capybara.save_and_open_page_path = ::Rails.root.join('public')
+  end
+
   config.include ShowPage, type: :request
 end
